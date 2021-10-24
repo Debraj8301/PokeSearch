@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+.App {
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+   flex-direction: column;
+   
+}
+.Title-section {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  color: #040311;
+  font-family: 'Zen Kurenaido', sans-serif;
+  background-image: url("canyon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* flex-direction: column;
+  align-items: center; */
+}
+body{
+  
+  
+  margin: 0%;
+  padding: 0%;
+}
+.search-box{
+  width: 100%;
+  position: relative;
+  display: flex;
+  /* position: absolute; */
+}
+.search-input{
+  width: 100%;
+  padding: 10px;
+  border: 4px solid #111d5e;
+  border-radius:10px 0 0 10px ;
+  border-right: none;
+  outline: none;
+  font-size: 20px;
+  color: rgb(124, 27, 10);
+  
+  background: none;
+}
+.search-button{
+ text-align: center;
+height: 51px;
+width: 40px;
+outline: none;
+cursor: pointer;
+border: 4px solid #111d5e;
+ border-radius: 0 10px 10px 0 ;
+border-left: none;
+background: none;
+font-size: 20px;
+border-left: 4px solid #111d5e;
+
+
+}
+.search-button:hover {
+  background-color: #454f88;
+}
+.search-button:hover{
+  transform: translateY(-4px);
+  transform: translateX(-4px);
+}
+.container{
+  width: 35%;
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  transform: translate(-50% , -50%);
+}
+.reccomendation {
+ position: absolute;
+ 
+ 
+}
+.rec {
+  width: 500%;
+  padding: 2px;
+  /* margin: 5px; */
+  /* border: 4px solid #111d5e; */
+  border-radius:10px 10px 10px 10px ;
+  /* border-right: none; */
+  outline: none;
+  font-size: 20px;
+  color: rgb(124, 27, 10);
+  
+  z-index: 1000;
+}
+.rec:hover {
+  background-color: #f2f2f2;
+  font-size: 27px;
+  font-weight: 900;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.displaySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #E6EBEE;
+  background-color: white;
+	font-family: tahoma, sans-serif;
+  /* background-image: url("wp2098819.jpg"); 
+  background-size: cover; */
+  background-color: #dee3e4;
+}
+#card {
+	background-color: #393B45;
+	height: auto;
+	width: 350px;
+	margin: 8vh auto;
+	border-radius: 25px;
+	padding-bottom: 1px;
+	box-shadow: 2px 2px 5px rgb(124, 27, 10);
+}
+
+h3 {
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-color: #E6EBEE;
+	border-radius: 25px 25px 0 0;
+	color: #393B45;
+	padding: 20px 0;
+	font-weight: 800;
+	margin: 0;
+}
+
+.image-crop {
+	display: block;
+	position: relative;
+	background-color: #E6EBEE;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 30px;
+	overflow: hidden;
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px #4069E2;
+}
+
+#avatar {
+	display: inline;
+	height: 230px;
+	width: auto;
+	margin-left: -34px;
+}
+
+#bio {
+	display: block;
+	margin: 28px auto;
+	width: 280px;
+	height: auto;
+  
+}
+
+#bio p {
+	color: #E6EBEE;
+	font-weight: lighter;
+	font-size: 15px;
+	text-align: center;
+}
+
+#stats {
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	width: 280px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+}
+
+.stat {
+	font-size: 20px;
+	margin: 0;
+}
+
+.label {
+	margin: 0;
+  font-size: 22px;
+}
+
+
+
+#msg{
+	background-color: #E6EBEE;
+	color: #393B45;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 90%;
+    top: 18%;
+  }
+  
+}
+@media only screen and (max-width: 1100px) {
+  .container{
+    width: 90%;
+    top: 11%;
+  }
+  
+}
+@media only screen and (max-width: 500px) {
+  .container{
+    width: 90%;
+    top: 20%;
+  }
+  
+}
