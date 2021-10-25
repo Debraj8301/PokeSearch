@@ -55,7 +55,7 @@ function App() {
 
   const getAllPokemon = () => {
 
-    Axios.get(`https://pokeapi.co/api/v2/pokemon/?limit=1000}`).then((res) => {
+    Axios.get(`https://pokeapi.co/api/v2/pokemon/?limit=100}`).then((res) => {
       const names = [];
       res.data.results.map((obj) => {
         names.push(obj.name);
